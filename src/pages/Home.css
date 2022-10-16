@@ -112,3 +112,12 @@
   font-weight: 600;
   margin-bottom: 25px;
 }
+
+/* added by me */
+
+.randomContainer {
+  margin-top: 200vh;
+  color: black;
+  width: 300px;
+  padding-left:100px;
+}

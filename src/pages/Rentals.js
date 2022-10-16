@@ -1,12 +1,17 @@
-import React from "react";
+ import React from "react";
 import "./Rentals.css";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router";
 
 const Rentals = () => {
-
+  const {state : searchFilter}=useLocation();
   return (
     <>
      <Link to="/"> Home </Link>
+     { searchFilter &&
+     <div onClick={()=>console.log(searchFilter)}>hi</div>
+
+     }
     </>
   );
 };
