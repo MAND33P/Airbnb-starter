@@ -116,8 +116,16 @@
 /* added by me */
 
 .randomContainer {
-  margin-top: 200vh;
+  margin-top: 25vh;
   color: black;
   width: 300px;
   padding-left:100px;
+  background-image: linear-gradient();
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:93%;
+  padding: 30px 60px;
+  border-radius: 5px;
 }
