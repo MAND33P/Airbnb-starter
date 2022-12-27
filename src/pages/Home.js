@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import {ConnectButton , Icon, Select, DatePicker, Input, Button, CryptoCards, Skeleton} from "web3uikit";
+import {ConnectButton , Icon, Select, DatePicker, Input, Button, CryptoCards, Skeleton , Logo} from "web3uikit";
 import { useState } from "react";
 
 
@@ -172,7 +172,8 @@ const Home = () => {
       {/* Crypto cards */}
 
       
-     <CryptoCards
+
+     {/* <CryptoCards
   bgColor="linear-gradient(113.54deg, rgba(117, 183, 251, 0.531738) 14.91%, rgba(215, 38, 243, 0.6) 42.57%, rgba(252, 84, 255, 0.336) 45.98%, rgba(209, 103, 255, 0.03) 55.76%), linear-gradient(160.75deg, #AB42CB 41.37%, #45FFFF 98.29%)"
   btnText="View Endpoints"
   chain="ethereum"
@@ -199,7 +200,7 @@ const Home = () => {
   chain="avalanche"
   chainType="Network"
   onClick={function noRefCheck(){}}
-/>
+/> */}
 
 </div>
 
@@ -209,12 +210,11 @@ const Home = () => {
                     ...
 .........................................................................................................
 
-
-
-.............................................................................................................
-
-  
-            ......
+<Logo
+  size="regular"
+  theme="mastercard"
+/>
+...................................................................
                     
                   </div>
                     <div>
