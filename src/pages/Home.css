@@ -129,3 +129,28 @@
   padding: 30px 60px;
   border-radius: 5px;
 }
+
+/* ................................. */
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(216, 216, 216);
+  background-color: transparent;
+  
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}

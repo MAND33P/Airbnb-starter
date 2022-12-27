@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import {ConnectButton , Icon, Select, DatePicker, Input, Button, CryptoCards, Skeleton , Logo} from "web3uikit";
+import {ConnectButton , Icon, Select, DatePicker, Input, Button, CryptoCards, Skeleton , Logo, NFTBalance, Form} from "web3uikit";
 import { useState } from "react";
 
 
@@ -53,10 +53,11 @@ const Home = () => {
         <div className="tabs">
           {/* tab */}
           <div className="selected">Places to stay</div>
-          <div>Experience</div>
-          <div>Explore</div>
-          <div>About</div>
-          <div>Contact US</div>
+          <div><a href={"www.google.com"}> Experience</a></div>
+          <div><a href={"www.google.com"}> Explore</a></div>
+          <div><a href={"www.google.com"}> About</a></div>
+          <div><a href={"www.google.com"}> Contact Us</a></div>
+
         </div>
         <div className="lrContianers"><ConnectButton /></div>
       </div>
@@ -214,7 +215,114 @@ const Home = () => {
   size="regular"
   theme="mastercard"
 />
+
+<Form
+  buttonConfig={{
+    onClick: function noRefCheck(){},
+    theme: 'primary'
+  }}
+  data={[
+    {
+      inputWidth: '100%',
+      name: 'first name',
+      type: 'text',
+      value: ''
+    },
+    {
+      inputWidth: '100%',
+      name: 'your email',
+      type: 'email',
+      validation: {
+        regExp: '^[^@s]+@[^@s]+.[^@s]+$',
+        required: true
+      },
+      value: ''
+    },
+    {
+      name: 'your digits',
+      type: 'tel',
+      validation: {
+        required: true
+      },
+      value: ''
+    },
+    {
+      name: 'your password',
+      type: 'password',
+      validation: {
+        characterMaxLength: 20,
+        characterMinLength: 6,
+        required: true
+      },
+      value: ''
+    },
+    {
+      name: 'Rate our form? 1-10',
+      type: 'number',
+      validation: {
+        numberMax: 10,
+        numberMin: 1,
+        required: true
+      },
+      value: ''
+    },
+    {
+      name: 'pizza fav',
+      options: [
+        'pineapple',
+        'peppers',
+        'chillies'
+      ],
+      type: 'box',
+      value: 'what toppings do you like?'
+    },
+    {
+      name: 'Morning checklist',
+      options: [
+        'say GM',
+        'make coffee',
+        'build killer web3uiKit'
+      ],
+      type: 'switch',
+      validation: {
+        required: true
+      },
+      value: 'Check list'
+    },
+    {
+      name: 'pokemon',
+      options: [
+        'charmander',
+        'squirtle',
+        'bulbasaur'
+      ],
+      type: 'radios',
+      value: 'who\'s that pokemon?'
+    },
+    {
+      inputWidth: '100%',
+      name: 'Image',
+      type: 'file',
+      value: ''
+    },
+    {
+      inputWidth: '100%',
+      name: 'Any more comments?',
+      type: 'textarea',
+      validation: {
+        required: true
+      },
+      value: ''
+    }
+  ]}
+  onSubmit={function noRefCheck(){}}
+  title="Test form"
+/>
 ...................................................................
+
+
+
+.........................................................................
                     
                   </div>
                     <div>
