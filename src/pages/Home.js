@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import {ConnectButton , Icon, Select, DatePicker, Input, Button, CryptoCards, Skeleton , Logo, NFTBalance, Form} from "web3uikit";
+import {ConnectButton , Icon, Select, DatePicker, Input, Button, CryptoCards, Skeleton , Logo, NFTBalance, Form, LinkTo} from "web3uikit";
 import { useState } from "react";
 
 
@@ -52,11 +52,19 @@ const Home = () => {
         </div>
         <div className="tabs">
           {/* tab */}
-          <div className="selected">Places to stay</div>
+                      <LinkTo
+              // address="https://mand33p.github.io/Donate.org/"
+              address="contact.html"
+              iconLayout="leading"
+              onClick={function noRefCheck(){}}
+              text="Moralis Youtube"
+              type="external"
+            />
+          <div><a href={" "}> Places to Stay</a></div>
           <div><a href={"www.google.com"}> Experience</a></div>
           <div><a href={"www.google.com"}> Explore</a></div>
           <div><a href={"www.google.com"}> About</a></div>
-          <div><a href={"www.google.com"}> Contact Us</a></div>
+          <div><a href="contact.html"> Contact Us</a></div>
 
         </div>
         <div className="lrContianers"><ConnectButton /></div>
